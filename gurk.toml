@@ -1,0 +1,32 @@
+first_name_only = false
+show_receipts = true
+bell = true
+colored_messages = false
+default_keybindings = false
+
+[notifications]
+enabled = true
+show_message_text = true
+show_message_chat = true
+show_reactions = true
+mute_reactions_bell = false
+
+[user]
+display_name = "rosso"
+
+[keybindings.anywhere]
+ctrl-c = "quit"
+[keybindings.message_selected]
+ctrl-e = "edit_message"
+[keybindings.normal]
+up = "select_message previous entry"
+down = "select_message next entry"
+alt-left = "select_channel previous"
+alt-right = "select_channel next"
+backspace = "delete_character previous"
+end = "end_of_line"
+home = "beginning_of_line"
+left = "move_text previous character"
+right = "move_text next character"
+ctrl-left= "move_text previous word"
+ctrl-right = "move_text next word"
