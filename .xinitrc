@@ -4,8 +4,7 @@ clipmenud &
 dunst &
 numlockx on &
 fcitx5 &
-st -t gurk -g 85x30+25+850 gurk &
-st -t nchat -g 85x30+25+25 nchat &
+st -t nchat -g 80x40+15+100 nchat &
 flameshot &
 xrdb -merge $HOME/.Xresources &&
 exec dwm 
