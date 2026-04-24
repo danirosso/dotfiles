@@ -1,10 +1,11 @@
-xrandr --output HDMI-A-0 --auto --pos 0x0 --rotate left --output DisplayPort-0 --primary --auto --pos 1080x720 &
-$HOME/.name.sh &
+xrandr --output HDMI-A-0 --rotate left --pos 0x0 --auto --left-of DisplayPort-0 --output DisplayPort-0 --primary --pos 1080x800 --dpi 102 --auto &
+st -c nchat -g 75x30+15+50 nchat &
+st -c gurk -g 75x25+15+1050 gurk  &
+xrdb -merge $HOME/.Xresources &
+setxkbmap -layout br
+numlockx &
+flameshot &
 clipmenud &
 dunst &
-numlockx on &
-fcitx5 &
-st -t nchat -g 80x40+15+100 nchat &
-flameshot &
-xrdb -merge $HOME/.Xresources &&
-exec dwm 
+pipewire &
+dbus-run-session dwm
