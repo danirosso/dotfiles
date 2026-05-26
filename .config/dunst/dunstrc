@@ -225,12 +225,18 @@ timeout = 8
 #    summary = "*"
 #    script = dunst_espeak.sh
 
-[nchatscript] 
-    summary = "*Valdira*"
-    script = ~/.config/dunst/nchatnoti.sh
-[gurkscript] 
-    appname = "gurk"
-    script = ~/.config/dunst/gurknoti.sh
+# [nchatscript] 
+#   appname = "nchat"
+#   script = ~/.config/dunst/nchatnoti.sh
+# [gurkscript] 
+#   appname = "gurk"
+#   script = ~/.config/dunst/gurknoti.sh
+
+[caps_lock]
+appname = "capslock"
+frame_color = "#B7472A"
+foreground = "#B7472A"
+timeout = 2
 
 #[ignore]
 #    # This notification will not be displayed
