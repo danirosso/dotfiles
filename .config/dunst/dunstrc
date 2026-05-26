@@ -1,6 +1,5 @@
 [global]
-font = Terminus (TTF) 28
-
+font = Terminus (TTF) 24
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -184,7 +183,7 @@ context = ctrl+shift+period
 # Otherwise the "#" and following would be interpreted as a comment.
 frame_color = "#3B7C87"
 foreground = "#3B7C87"
-background = "#191311"
+background = "#222222"
 #background = "#2B313C"
 timeout = 4
 
@@ -198,7 +197,7 @@ timeout = 6
 [urgency_critical]
 frame_color = "#B7472A"
 foreground = "#B7472A"
-background = "#191311"
+background = "#222222"
 #background = "#2B313C"
 timeout = 8
 
@@ -227,7 +226,7 @@ timeout = 8
 #    script = dunst_espeak.sh
 
 [nchatscript] 
-    appname = "nchat"
+    summary = "*Valdira*"
     script = ~/.config/dunst/nchatnoti.sh
 [gurkscript] 
     appname = "gurk"

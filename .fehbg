@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill --xinerama-index 0 '/home/rosso/.wallpaper' 
