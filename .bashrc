@@ -23,14 +23,14 @@ alias m2c="xclip -o -selection primary 2>/dev/null | xclip -i -selection clipboa
 alias maimclip="maim -s -b 4 -c 0,0.33,0.46 | xclip -selection clipboard -t image/png"
 alias maimsave="maim -s -b 4 -c 0,0.33,0.46 $HOME/Images/maim_$(date +%s).png"
 
-export LESS='-N --RAW-CONTROL-CHARS --use-color -Dd+r -Du+b'
+export LESS='--RAW-CONTROL-CHARS --use-color -Dd+r -Du+b'
 export EDITOR='vim'
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 
-export nnn_plug="p:preview-tabbed;s:cpath;"
-export nnn_fifo=/tmp/nnn.fifo
+export NNN_PLUG="p:preview-tabbed;s:cpath;"
+export NNN_FIFO=/tmp/nnn.fifo
 alias nnn='nnn -H -o'
 
 if [ "$(tty)" == "/dev/tty1" ]; then
