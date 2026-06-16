@@ -151,7 +151,7 @@ previewer_loop () {
         case "$MIME" in
             video/*)
                 if type mpv >/dev/null 2>&1 ; then
-                    mpv --force-window=immediate --loop-file --wid="$XID" "$FILE" &
+                    mpv --force-window=immediate --pause --start=50%  --wid="$XID" "$FILE" &
                 else
                     term_nuke "$XID" "$FILE"
                 fi

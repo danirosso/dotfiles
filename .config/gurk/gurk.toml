@@ -1,9 +1,8 @@
 first_name_only = false
 show_receipts = true
-bell = true
+bell = false
 colored_messages = false
 default_keybindings = false
-passphrase = "6414"
 
 [user]
 display_name = "rosso"

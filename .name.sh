@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 while true; do
 	getvolume=$(wpctl 2>/dev/null get-volume @DEFAULT_SINK@| awk ' {print $2 * 100} ')
 	getdate=$(date +' %d/%m/%y  %R')
@@ -8,9 +8,10 @@ while true; do
 
 	xsetroot -name " $name"
 
-	if [ "$capstate" == "on" ]; then
-		notify-send -a "capslock" "CAPS LOCK ON"
+	if [ "$capstate" = "on" ] ; then
+		notify-send -t 1100 -a "capslock" "CAPS LOCK ON"
 	fi
 
 	sleep 1
+
 done
