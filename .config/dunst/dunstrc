@@ -240,6 +240,16 @@ frame_color = "#B7472A"
 foreground = "#B7472A"
 # timeout = 1
 
+[Valdira]
+appname = "nchat"
+summary = "*aldira"
+script = ~/.config/dunst/playsound.sh
+
+[Amarildo]
+appname = "nchat"
+summary = "*marildo"
+script = ~/.config/dunst/playsound.sh
+
 #[ignore]
 #    # This notification will not be displayed
 #    summary = "foobar"
