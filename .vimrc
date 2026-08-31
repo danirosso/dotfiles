@@ -1,6 +1,10 @@
 source $VIMRUNTIME/defaults.vim
- 
+
 set wrap
+ 
+set termguicolors 
+colorscheme sorbet
+highlight Normal guibg=black
  
 set tabstop=4
 set shiftwidth=4
@@ -38,7 +42,7 @@ nnoremap <F6> :nohl <cr>
 nnoremap <c-F6> :setlocal spell! spelllang=en_us<cr>
 nnoremap <a-F6> :setlocal spell! spelllang=pt_br<cr>
  
-nnoremap <F4> :w <bar> :vertical terminal++shell clear && make<cr>
+nnoremap <F4> :w <bar> :!make <cr>
 nnoremap <F5> gg V G "+y
  
 autocmd FileType c nnoremap <a-F4> :w <bar> :vertical terminal++shell clear && gcc -Wall -o ./%:r % && ./%:r<cr>

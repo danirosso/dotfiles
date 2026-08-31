@@ -24,7 +24,7 @@ alias bt="bluetoothctl"
 alias wine="LC_ALL=ja_JP.UTF-8 wine"
 alias arquivo-x="nnn /var/lib/transmission/Downloads/T*" 
 
-export LESS='--RAW-CONTROL-CHARS --use-color -Dd+r -Du+b'
+export LESS='-M --RAW-CONTROL-CHARS --use-color -Dd+r -Du+b'
 export EDITOR='vim'
 
 export GTK_IM_MODULE=fcitx
