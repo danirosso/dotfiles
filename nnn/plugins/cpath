@@ -1,0 +1,1 @@
+echo $PWD/$nnn | xclip -selection clipboard

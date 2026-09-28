@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/rosso/.dwm/daniwm'
+let g:netrw_dirhist_8='/home/rosso/.config/nchat'
+let g:netrw_dirhist_7='/home/rosso/Projects/dani/exercises-from-C-A-Modern-Approach/chapter03'
+let g:netrw_dirhist_6='/home/rosso/Projects/dani/exercises-from-C-A-Modern-Approach'
+let g:netrw_dirhist_5='/home/rosso/Projects/dani/shipbattles/lib'
+let g:netrw_dirhist_4='/home/rosso/Downloads'
+let g:netrw_dirhist_3='/sys/class/leds/input43:green'
+let g:netrw_dirhist_2='/sys/devices/virtual/misc/uhid/0005:054C:09CC.000C/leds/input43:global/subsystem/input43:green'
+let g:netrw_dirhist_1='/sys/devices/virtual/misc/uhid/0005:054C:09CC.000C/leds/input43:global/subsystem'
+let g:netrw_dirhist_0='/sys/devices/virtual/misc/uhid/0005:054C:09CC.000C/leds/input43:global'
