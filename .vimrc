@@ -4,8 +4,6 @@ set wrap
  
 set termguicolors 
 colorscheme mysorbet
-"highlight Normal guibg=black
-set path=.,**
  
 set tabstop=4
 set shiftwidth=4
@@ -16,6 +14,7 @@ set smartcase
  
 set number
 set relativenumber
+set listchars=eol:$,tab:>_,trail:~,extends:>,precedes:<,space:·
  
 set splitbelow
 set splitright
@@ -37,7 +36,7 @@ nnoremap <F10> gt
 
 nnoremap <c-k> :m -2<CR>
 nnoremap <c-j> :m +1<CR>
-nnoremap O o <esc>
+nnoremap O o<esc>
  
 nnoremap <F6> :nohl <cr>
 nnoremap <c-F6> :setlocal spell! spelllang=en_us<cr>
@@ -45,7 +44,8 @@ nnoremap <a-F6> :setlocal spell! spelllang=pt_br<cr>
  
 nnoremap <F4> :w <bar> :vertical terminal ++shell make %:r<cr>
 nnoremap <F5> gg V G "+y
- 
+
+autocmd FileType asm :set list 
 autocmd FileType c nnoremap <a-F4> :w <bar> :vertical terminal++shell clear && gcc -Wall -o ./%:r % && ./%:r<cr>
 autocmd FileType cpp nnoremap <a-F4> :w <bar> :vertical terminal++shell clear && g++ -Wall -o ./%:r % && ./%:r<cr>
 autocmd FileType tex set indentexpr=
