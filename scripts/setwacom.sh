@@ -1,5 +1,7 @@
 #!/bin/sh
 
-xsetwacom set 13 mapToOutput HDMI-A-0 &&
-xsetwacom set 13 rotate ccw &&
-xsetwacom set 13 threshold 100
+stylus=$(xsetwacom list | awk '/stylus/ {print $9}')
+
+xsetwacom set $stylus mapToOutput HDMI-A-0 &&
+xsetwacom set $stylus rotate ccw &&
+xsetwacom set $stylus threshold 100

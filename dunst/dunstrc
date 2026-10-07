@@ -348,7 +348,7 @@ offset = (15, 49)
     timeout = 4
 
     [urgency_normal]
-    script = ~/.config/dunst/playsound.sh
+    script = ~/.config/dunst/playnoti.sh
     frame_color = "#005577"
     foreground = "#005577"
     background = "#222222"
@@ -370,8 +370,10 @@ offset = (15, 49)
     [caps_lock]
     font = Terminus (TTF) 32
     appname = "capslock"
-    frame_color = "#B7472A"
-    foreground = "#B7472A"
+    #frame_color = "#B7472A"
+    #foreground = "#B7472A"
+    urgency = "low"
+    script = ~/.config/dunst/playnoti.sh
 
     [Valdira]
     appname = "nchat" 
@@ -380,7 +382,8 @@ offset = (15, 49)
     foreground = "#B7472A"
     background = "#222222"
     timeout = 0
-    script = ~/.config/dunst/beepsound.sh
+    urgency = "critical"
+    script = ~/.config/dunst/playnoti.sh
 
     [Amarildo]
     appname = "nchat" 
@@ -389,7 +392,8 @@ offset = (15, 49)
     foreground = "#B7472A"
     background = "#222222"
     timeout = 0
-    script = ~/.config/dunst/beepsound.sh
+    urgency = "critical"
+    script = ~/.config/dunst/playnoti.sh
 
     [Computacao]
     appname = "nchat" 
@@ -398,11 +402,13 @@ offset = (15, 49)
     foreground = "#B7472A"
     background = "#222222"
     timeout = 0
-    script = ~/.config/dunst/beepsound.sh
+    urgency = "critical"
+    script = ~/.config/dunst/playnoti.sh
 
     [lefts]
     appname = "nchat" 
     body = "\[*\]"
+    urgency = "low"
     skip_display = true
 
 # Messages can be matched by
